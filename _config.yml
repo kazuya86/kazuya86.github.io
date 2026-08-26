@@ -7,3 +7,8 @@ lang: ja
 # GitHub Pages builds this with the default `github-pages` gem automatically —
 # no Gemfile needed. Permalinks are set per-page via front matter.
 markdown: kramdown
+
+# jekyll-sitemap is on GitHub Pages' allowed-plugins list, so this generates
+# /sitemap.xml automatically without needing a Gemfile.
+plugins:
+  - jekyll-sitemap
