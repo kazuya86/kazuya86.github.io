@@ -1,6 +1,6 @@
 # kazuya86.github.io
 
-My Asset Calculation(資産管理アプリ)の紹介サイト・ブログ。GitHub Pages(Jekyll)でホスティング。
+My Asset Calculator(資産管理アプリ)の紹介サイト・ブログ。GitHub Pages(Jekyll)でホスティング。
 
 - `/` — アプリ紹介
 - `/asset-calculator/` — 総資産計算
