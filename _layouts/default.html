@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/assets/images/app-icon.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/images/app-icon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <img src="/assets/images/app-icon.png" alt="" class="brand-icon">
+      <span>{{ site.title }}</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/asset-calculator/">総資産計算</a>
+      <a href="/asset-simulation/">資産シミュレーション</a>
+      <a href="/portfolio/">ポートフォリオ</a>
+      <a href="/net-worth/">純資産・総資産</a>
+      <a href="/nisa/">NISA</a>
+      <a href="/blog/">ブログ</a>
+    </nav>
+    <a class="btn btn-primary header-cta" href="{{ site.app_store_url }}">App Storeで見る</a>
+  </div>
+</header>
+
+<main>
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="/assets/images/app-icon.png" alt="" class="brand-icon">
+      <div>
+        <strong>{{ site.title }}</strong>
+        <p>資産管理・資産シミュレーションアプリ</p>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="/">ホーム</a>
+      <a href="/asset-calculator/">総資産計算</a>
+      <a href="/asset-simulation/">資産シミュレーション</a>
+      <a href="/portfolio/">ポートフォリオ</a>
+      <a href="/net-worth/">純資産・総資産</a>
+      <a href="/nisa/">NISA</a>
+      <a href="/blog/">ブログ</a>
+    </nav>
+    <p class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
+  </div>
+</footer>
+</body>
+</html>

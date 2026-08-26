@@ -1,0 +1,9 @@
+title: My Asset Calculation
+description: "現金・株式・投資信託・債券・暗号資産をまとめて管理し、将来の資産をシミュレーションできる資産管理アプリ「My Asset Calculation」の公式サイト"
+url: "https://kazuya86.github.io"
+app_store_url: "https://apps.apple.com/app/id0000000000"
+lang: ja
+
+# GitHub Pages builds this with the default `github-pages` gem automatically —
+# no Gemfile needed. Permalinks are set per-page via front matter.
+markdown: kramdown
